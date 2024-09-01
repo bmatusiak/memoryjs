@@ -1600,6 +1600,7 @@ Napi::Object init(Napi::Env env, Napi::Object exports) {
   exports.Set(Napi::String::New(env, "unloadDll"), Napi::Function::New(env, unloadDll));
   exports.Set(Napi::String::New(env, "openFileMapping"), Napi::Function::New(env, openFileMapping));
   exports.Set(Napi::String::New(env, "mapViewOfFile"), Napi::Function::New(env, mapViewOfFile));
+  exports.Set(Napi::String::New(env, "closeHandle"), Napi::Function::New(env, closeHandle));
   return exports;
 }
 
